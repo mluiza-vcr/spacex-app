@@ -1,1 +1,3 @@
-https://github.com/negomi/react-burger-menu
+Clean code: ESLint
+
+https://github.com/negomi/react-burger-menugit

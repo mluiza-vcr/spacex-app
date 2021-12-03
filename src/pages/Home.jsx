@@ -6,12 +6,12 @@ import LatestLaunch from '../components/LatestLaunch';
 
 function Home() {
   return (
-    <div className="Home">
+    <>
       <Header />
       <NextLaunch />
       <LatestLaunch />
       <Footer />
-    </div>
+    </>
   );
 }
 

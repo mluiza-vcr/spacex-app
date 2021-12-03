@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import LaunchesCards from '../components/LaunchesCards';
+import Footer from '../components/Footer';
 
 function UpcomingLaunches() {
   return (
@@ -8,6 +9,7 @@ function UpcomingLaunches() {
       <Header />
       LANÇAMENTOS FUTUROS
       <LaunchesCards />
+      <Footer />
     </div>
   );
 }

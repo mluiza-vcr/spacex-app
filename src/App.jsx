@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import PastLaunches from './pages/PastLaunches';
 import UpcomingLaunches from './pages/UpcomingLaunches';
+import './App.css';
 
 function App() {
   return (

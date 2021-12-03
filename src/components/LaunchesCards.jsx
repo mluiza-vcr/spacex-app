@@ -6,7 +6,8 @@ function LaunchesCards() {
 
   const launch = JSON.parse(localStorage.getItem(pathName));
 
-  const showImage = (param, alt) => (<img src={param} alt={alt} />);
+  const showImage = (param, alt, className) => (
+    <img src={param} alt={alt} className={className} />);
 
   const showArticle = (param, nome) => (<a href={param}>{`Artigo sobre ${nome}`}</a>);
 
@@ -22,7 +23,7 @@ function LaunchesCards() {
           </h2>
           {links.patch.small
             ? showImage(links.patch.small, 'Foguete')
-            : showImage(noImage, 'Sem imagem')}
+            : showImage(noImage, 'Sem imagem', 'no-image')}
           {links.article
             ? showArticle(links.article, name)
             : null}

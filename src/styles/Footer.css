@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.972);
+  color: #A7A9AC;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h3 {
+  margin-right: 15px;
+}

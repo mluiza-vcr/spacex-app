@@ -15,7 +15,8 @@ function NextLaunch() {
     fetchAPI();
   }, []);
 
-  const showImage = (param, alt) => (<img src={param} alt={alt} />);
+  const showImage = (param, alt, className) => (
+    <img src={param} alt={alt} className={className} />);
 
   return (
     <section className="main-launches">
@@ -25,10 +26,7 @@ function NextLaunch() {
       </h2>
       {launch.links && launch.links.patch.small
         ? showImage(launch.links.patch.small, 'Foguete')
-        : showImage(noImage, 'Sem imagem')}
-      <p>
-        {launch.flight_number}
-      </p>
+        : showImage(noImage, 'Sem imagem', 'no-image')}
     </section>
   );
 }

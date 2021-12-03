@@ -1,0 +1,21 @@
+body {
+  background-color: #005288;;
+}
+
+.launch-container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.launch-container-home > div{
+  display: flex;
+  padding: 50px;
+  margin: 10px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.no-image {
+  width: 320px;
+}

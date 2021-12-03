@@ -3,13 +3,18 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import NextLaunch from '../components/NextLaunch';
 import LatestLaunch from '../components/LatestLaunch';
+import '../styles/HomeCards.css';
 
 function Home() {
   return (
     <>
       <Header />
-      <NextLaunch />
-      <LatestLaunch />
+      <div className="launch-container-home">
+        <div>
+          <NextLaunch />
+          <LatestLaunch />
+        </div>
+      </div>
       <Footer />
     </>
   );

@@ -8,7 +8,6 @@ function Home() {
   return (
     <div className="Home">
       <Header />
-      ESSA É A HOME
       <NextLaunch />
       <LatestLaunch />
       <Footer />

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import launchesServices from '../services/launchesServices';
+import noImage from '../assets/images/noImage.jpg';
+import '../styles/LaunchesCards.css';
 
 function LatestLaunch() {
   const [launch, setLaunch] = useState([]);
@@ -13,11 +15,20 @@ function LatestLaunch() {
     fetchAPI();
   }, []);
 
+  const showImage = (param, alt) => (<img src={param} alt={alt} />);
+
   return (
     <section className="main-launches">
-      <p>ÚLTIMO LANÇAMENTO</p>
-      <p>{launch.name}</p>
-      <p>{launch.flight_number}</p>
+      <h1>ÚLTIMO LANÇAMENTO</h1>
+      <h2>
+        {launch.name}
+      </h2>
+      {launch.links && launch.links.patch.small
+        ? showImage(launch.links.patch.small, 'Foguete')
+        : showImage(noImage, 'Sem imagem')}
+      <p>
+        {launch.flight_number}
+      </p>
     </section>
   );
 }

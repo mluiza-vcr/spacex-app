@@ -5,7 +5,7 @@ function LatestLaunch() {
   const [launch, setLaunch] = useState([]);
 
   const fetchAPI = async () => {
-    const response = await launchesServices.showLatestLaunch();
+    const response = await launchesServices.showLaunches('latest');
     setLaunch(response);
   };
 

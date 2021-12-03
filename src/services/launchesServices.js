@@ -1,21 +1,10 @@
 import axios from 'axios';
 
-const nextLaunchURL = 'https://api.spacexdata.com/v5/launches/next';
+const launchURL = (param) => `https://api.spacexdata.com/v5/launches/${param}`;
 
-const latestLaunchURL = 'https://api.spacexdata.com/v5/launches/latest';
-
-const showNextLaunch = async () => {
+const showLaunches = async (param) => {
   try {
-    const response = await axios.get(nextLaunchURL);
-    return response.data;
-  } catch (err) {
-    return err;
-  }
-};
-
-const showLatestLaunch = async () => {
-  try {
-    const response = await axios.get(latestLaunchURL);
+    const response = await axios.get(launchURL(param));
     return response.data;
   } catch (err) {
     return err;
@@ -23,6 +12,5 @@ const showLatestLaunch = async () => {
 };
 
 export default {
-  showNextLaunch,
-  showLatestLaunch,
+  showLaunches,
 };

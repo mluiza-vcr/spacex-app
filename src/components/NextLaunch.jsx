@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import launchesServices from '../services/launchesServices';
+import '../styles/LaunchesCards.css';
 
 function NextLaunch() {
   const [launch, setLaunch] = useState([]);
 
   const fetchAPI = async () => {
-    const response = await launchesServices.showNextLaunch();
+    const response = await launchesServices.showLaunches('next');
     setLaunch(response);
   };
 
@@ -16,8 +17,14 @@ function NextLaunch() {
   return (
     <section className="main-launches">
       <p>PRÓXIMO LANÇAMENTO</p>
-      <p>{launch.name}</p>
-      <p>{launch.flight_number}</p>
+      <p>
+        Nome:
+        {launch.name}
+      </p>
+      <p>
+        Número do vôo:
+        {launch.flight_number}
+      </p>
     </section>
   );
 }

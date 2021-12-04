@@ -5,12 +5,11 @@ import Footer from '../components/Footer';
 
 function UpcomingLaunches() {
   return (
-    <div>
+    <>
       <Header />
-      LANÇAMENTOS FUTUROS
       <LaunchesCards />
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -12,13 +12,10 @@ function LaunchesCards() {
   const showArticle = (param, nome) => (<a href={param}>{`Artigo sobre ${nome}`}</a>);
 
   return (
-    <section className="main-launches">
+    <section className="launches-container">
       {launch.map(({ name, links, flight_number: flightNumber }) => (
-        <div key={flightNumber}>
-          <p>
-            {flightNumber}
-          </p>
-          <h2>
+        <div className="main-launches" key={flightNumber}>
+          <h2 className="cards-title">
             {name}
           </h2>
           {links.patch.small

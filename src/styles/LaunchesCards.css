@@ -1,0 +1,53 @@
+.main-launches {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.698);
+  background-color: rgba(18, 18, 71, 0.637);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-launches h1 {
+  background-color: rgba(0, 0, 0, 0.972);
+  font-size: 17px;
+  text-align: center;
+  color: #A7A9AC;
+}
+
+.main-launches h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.launches-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  padding: 20px;
+}
+
+.cards-title {
+  background-color: rgba(0, 0, 0, 0.972);
+  font-size: 20px;
+  text-align: center;
+  color: #A7A9AC;
+  margin-bottom: 20px;
+}
+
+.main-launches a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  font-weight: bold;
+}
+.main-launches a:hover {
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}

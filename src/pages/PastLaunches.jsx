@@ -7,7 +7,6 @@ function PastLaunches() {
   return (
     <div>
       <Header />
-      LANÇAMENTOS PASSADOS
       <LaunchesCards />
       <Footer />
     </div>

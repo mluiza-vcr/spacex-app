@@ -30,4 +30,16 @@ header {
 .logo {
   display: flex;
   justify-content: center;
+  animation-name: logo;
+  animation-duration: 3s;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: translate(0,-200px);
+  }
+  100% {
+    opacity: 1;
+  }
 }

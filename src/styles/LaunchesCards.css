@@ -4,7 +4,7 @@
   width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 500px;
 }
 
 .main-launches h1 {
@@ -43,6 +43,7 @@
   padding: 20px;
   font-weight: bold;
 }
+
 .main-launches a:hover {
   text-decoration: none;
   text-align: center;
@@ -50,4 +51,44 @@
   padding: 20px;
   font-weight: bold;
   font-size: 20px;
+}
+
+@media (max-width: 1460px) {
+  
+  .launches-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+
+  .main-launches a {
+    font-size: 30px;
+  }
+
+  .cards-title {
+    font-size: 30px;
+  }
+
+  .main-launches h1 {
+    font-size: 30px;
+  }  
+
+}
+
+@media (max-width: 600px) {
+  .main-launches img {
+    width: 200px;
+  }
+
+  .main-launches {
+    align-items: center;
+    height: 400px;
+  }
+
+  .main-launches h1 {
+    font-size: 20px;
+  }
+  .cards-title {
+    width: 100%;
+  }
 }

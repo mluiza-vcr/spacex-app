@@ -7,7 +7,7 @@ const showLaunches = async (param) => {
     const response = await axios.get(launchURL(param));
     return response.data;
   } catch (err) {
-    return err;
+    return [];
   }
 };
 

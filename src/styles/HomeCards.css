@@ -1,16 +1,16 @@
 body {
-  background-color: #005288;;
+  background-color: #005288;
 }
 
 .launch-container-home {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .launch-container-home > div{
   display: flex;
-  padding: 50px;
   margin: 10px;
   width: 100%;
   justify-content: space-evenly;
@@ -18,4 +18,12 @@ body {
 
 .no-image {
   width: 320px;
+}
+
+@media (max-width: 600px) {
+  .launch-container-home {
+    display: flex;
+   width: 100%;
+   padding: 40px;
+  }
 }

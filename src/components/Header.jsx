@@ -13,6 +13,8 @@ function Header() {
     });
   }, []);
 
+  if (document.querySelector('.bm-item')) document.querySelector('.bm-item').style.display = 'flex';
+
   const renderNav = () => (
     <nav>
       <button type="button">
@@ -47,7 +49,6 @@ function Header() {
       {renderNav()}
     </Menu>
   );
-  if (document.querySelector('.bm-item')) document.querySelector('.bm-item').style.display = 'flex';
 
   return (
     <div className="header-container">

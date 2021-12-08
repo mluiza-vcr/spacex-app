@@ -47,6 +47,7 @@ function Header() {
       {renderNav()}
     </Menu>
   );
+  if (document.querySelector('.bm-item')) document.querySelector('.bm-item').style.display = 'flex';
 
   return (
     <div className="header-container">

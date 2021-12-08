@@ -13,7 +13,7 @@ PastLaunches: "/past" <br>
 UpcomingLaunches: "/upcoming"
 - Na Home, são exibidos: próximo lançamento e último lançamento;
 - Na PastLaunches, são exibidos os lançamentos passados;
-- Na UpcomingLaunches, são exbidos os pŕoximos launches; <br>
+- Na UpcomingLaunches, são exbidos os pŕoximos lançamentos; <br>
 
 ##  ⚒️ Tecnologias utilizadas
   <img src="https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white">

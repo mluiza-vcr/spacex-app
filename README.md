@@ -8,9 +8,9 @@ as seguintes informações:
 
 - Páginas: [Home, PastLaunches, UpcomingLaunches];
 - Rotas: <br>
-Home: / <br>
-PastLaunches: /past <br>
-UpcomingLaunches: /upcoming
+Home: "/" <br>
+PastLaunches: "/past" <br>
+UpcomingLaunches: "/upcoming"
 - Na Home, são exibidos: próximo lançamento e último lançamento;
 - Na PastLaunches, são exibidos os lançamentos passados;
 - Na UpcomingLaunches, são exbidos os pŕoximos launches; <br>
@@ -51,4 +51,4 @@ UpcomingLaunches: /upcoming
 
  - O projeto vai iniciar em: http://localhost:3000/
 
- - Deploy do projeto em: 
+ - Deploy do projeto em: https://spacex-app-zapay.herokuapp.com/

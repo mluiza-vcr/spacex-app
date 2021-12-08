@@ -64,8 +64,6 @@ function Header() {
     </Menu>
   );
 
-  document.querySelector('.bm-item').style.display = 'flex';
-
   return (
     <div className="header-container">
       <header>

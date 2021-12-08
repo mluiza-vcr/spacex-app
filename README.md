@@ -16,15 +16,12 @@ UpcomingLaunches: "/upcoming"
 - Na UpcomingLaunches, são exbidos os pŕoximos launches; <br>
 
 ##  ⚒️ Tecnologias utilizadas
-<br>
   <img src="https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=JavaScript&logoColor=white">
   <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black">
   <img src="https://img.shields.io/badge/-Hooks-61DAFB?style=flat-square&logo=React&logoColor=black">
   <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white">
-<br>
-<br>
 
 ## <img src="https://img.icons8.com/dusk/64/000000/book.png" width="30px" /> Bibliotecas utilizadas
 
@@ -33,7 +30,6 @@ UpcomingLaunches: "/upcoming"
 - React Burger Menu
 - React Icons
 - Code Clean: ES Lint 
-<br>
 
 ## ✅ Para iniciar o projeto
   

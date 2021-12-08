@@ -1,11 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import noImage from '../assets/images/noImage.jpg';
 
-function LaunchesCards() {
-  const pathName = window.location.pathname.replace('/', '');
-
-  const launch = JSON.parse(localStorage.getItem(pathName));
-
+function LaunchesCards(props) {
+  const { api } = props;
   const showImage = (param, alt, className) => (
     <img src={param} alt={alt} className={className} />);
 
@@ -13,8 +11,8 @@ function LaunchesCards() {
 
   return (
     <section className="launches-container">
-      {launch.length === 0
-        ? <div>Carregando...</div> : launch.map(({ name, links, flight_number: flightNumber }) => (
+      {api.length === 0
+        ? <div>Carregando...</div> : api.map(({ name, links, flight_number: flightNumber }) => (
           <div className="main-launches" key={flightNumber}>
             <h2 className="cards-title">
               {name}
@@ -30,5 +28,9 @@ function LaunchesCards() {
     </section>
   );
 }
+
+LaunchesCards.propTypes = {
+  api: PropTypes.string,
+}.isRequired;
 
 export default LaunchesCards;

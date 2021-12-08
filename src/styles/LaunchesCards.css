@@ -82,13 +82,18 @@
 
   .main-launches {
     align-items: center;
-    height: 400px;
+    height: 420px;
   }
 
   .main-launches h1 {
     font-size: 20px;
   }
+
   .cards-title {
     width: 100%;
+  }
+
+  .main-launches a {
+    font-size: 20px;
   }
 }

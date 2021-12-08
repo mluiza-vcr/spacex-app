@@ -21,9 +21,18 @@ body {
 }
 
 @media (max-width: 600px) {
-  .launch-container-home {
+  .launch-container-home div {
     display: flex;
-   width: 100%;
-   padding: 40px;
+    width: 100%;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .launch-container-home div .main-launches {
+   margin-bottom: 40px;
+  }
+
+  .launch-container-home div .main-launches h1 {
+    width: 100%;
   }
 }

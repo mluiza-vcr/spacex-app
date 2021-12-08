@@ -16,11 +16,6 @@ header {
   border: 5px #A7A9AC, solid;
 }
 
-.header-container button:hover {
-  padding: 5px;
-  border: 5px #A7A9AC;
-}
-
 .link {
   text-decoration: none;
   color: #A7A9AC;
@@ -55,7 +50,6 @@ header {
   .link {
     font-size: 21px;
   }
-
 }
 
 @media (max-width: 720px) {

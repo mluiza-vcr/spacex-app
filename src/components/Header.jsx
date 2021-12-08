@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
-import launchesServices from '../services/launchesServices';
 import '../styles/Header.css';
 import SpaceXLogo from '../assets/images/SpaceX-Logo.png';
 
@@ -14,11 +13,6 @@ function Header() {
     });
   }, []);
 
-  const fetchAPI = async (param) => {
-    const response = await launchesServices.showLaunches(param);
-    return response;
-  };
-
   const renderNav = () => (
     <nav>
       <button type="button">
@@ -29,12 +23,7 @@ function Header() {
           Home
         </Link>
       </button>
-      <button
-        onClick={async () => {
-          localStorage.setItem('upcoming', JSON.stringify(await fetchAPI('upcoming')));
-        }}
-        type="button"
-      >
+      <button type="button">
         <Link
           to="/upcoming"
           className="link"
@@ -42,12 +31,7 @@ function Header() {
           Próximos lançamentos
         </Link>
       </button>
-      <button
-        onClick={async () => {
-          localStorage.setItem('past', JSON.stringify(await fetchAPI('past')));
-        }}
-        type="button"
-      >
+      <button type="button">
         <Link
           to="/past"
           className="link"
